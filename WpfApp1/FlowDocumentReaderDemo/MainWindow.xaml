@@ -1,0 +1,127 @@
+﻿<Window x:Class="FlowDocumentReaderDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowDocumentReaderDemo"
+        mc:Ignorable="d"
+        Title="MainWindow"  Height="350" Width="525">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph>
+                    <Run>mr. Промер работы FlowDocument</Run>
+                    
+                </Paragraph>
+
+                <Section FontFamily="Courier new" Background="Coral" FontSize="20">
+                    <Paragraph>
+                        mr. Пропер работы FlowDocument
+                    </Paragraph>
+                    <Paragraph Background="LightCoral">
+                        <Run Background="AliceBlue">mr. Промер</Run>
+                    </Paragraph>
+                    <Paragraph>
+                        mr. Промер работы FlowDocument
+                    </Paragraph>
+                </Section>
+                <List MarkerStyle="UpperRoman">
+                    <ListItem>
+                        <Paragraph Background="LightCoral">
+                            <Run>mr. DrоCHеR</Run>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph Background="LightCoral">
+                            <Run>mr. Пр@gер</Run>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph Background="LightCoral">
+                            <Run>mr. JопеR</Run>
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+                <Table BorderBrush="green" CellSpacing="5">
+                    <Table.Resources>
+                        <Style TargetType="TableCell">
+                            <Setter Property="BorderBrush" Value="Green" ></Setter>
+                            <Setter Property="BorderThickness" Value="5"></Setter>
+                            <Setter Property="Padding" Value="5"></Setter>
+                            <Setter Property="TextAlignment" Value="Center"></Setter>
+                        </Style>
+                    </Table.Resources>
+                    <TableRowGroup>
+                        <TableRow Background="Coral">
+                            <TableCell>
+                                <Paragraph Background="LightCoral">
+                                    <Run>mr. Пр@gер</Run>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="LightCoral">
+                                    <Run>mr. JопеR</Run>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <BlockUIContainer>
+                                    <Button Click="Button_Click">
+                                        mr. DrоCHеR
+                                    </Button>
+                                </BlockUIContainer>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="Coral">
+                            <TableCell>
+                                <Paragraph Background="LightCoral">
+                                    <Run>mr. Пр@gер</Run>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="LightCoral">
+                                    <Run>mr. JопеR</Run>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="LightCoral">
+                                    <Run>mr. DrоCHеR</Run>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="Coral">
+                            <TableCell>
+                                <Paragraph Background="LightCoral">
+                                    <Run>mr. Пр@gер</Run>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="LightCoral">
+                                    <Run>mr. JопеR</Run>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Background="LightCoral">
+                                    <Run>mr. DrоCHеR</Run>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                <Paragraph>
+                    <Span Background="LightGreen">
+                        <Bold>Microsoft</Bold>Et\assembly\GAC_MSIL\System.ServiceModel.Internals\v4.0_4.0.0.0__
+                        <Italic>31bf3856ad364e35\System.ServiceModel.Internals.dll</Italic> '. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'FlowDocumentReaderDemo.exe' (CLR v4.0.30319: FlowDocumentReaderDemo.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\<InlineUIContainer>
+                            <Button Content="sadfasd"/>
+                        </InlineUIContainer> GAC_MSIL\UIAutomationTypes\v4.0
+                    </Span>
+                </Paragraph>
+                <Paragraph>
+                    mr. Промер работы FlowDocument
+                </Paragraph>
+                
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
